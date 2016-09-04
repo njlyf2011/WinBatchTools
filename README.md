@@ -1,6 +1,6 @@
 # WinBatchTools
 
-这是一个开源的、自由的 Windows 命令行工具箱（以批处理脚本为主，当然也包括一些开源的小程序，因为实现功能不可能完全依靠 Batch 脚本对不对）。
+这是一个开源的、自由的 Windows 命令行工具箱。（主要供研究之用）
 
 关于许可：
 自己写的批处理基于GNU General Public License v3（GNU 通用公共许可证 第三版）发布。
