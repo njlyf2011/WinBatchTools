@@ -1,31 +1,31 @@
     @echo off
     
-    rem ç‰ˆæƒå£°æ˜ï¼šä¸‹é¢çš„ä»£ç æ¥æºäºç½‘ç»œï¼Œç‰ˆæƒå½’å…¶ä½œè€…æ‰€æœ‰ã€‚
-    rem æœ¬äººåœ¨æ­¤è¡¨ç¤ºæ„Ÿè°¢ã€‚
+    rem °æÈ¨ÉùÃ÷£ºÏÂÃæµÄ´úÂëÀ´Ô´ÓÚÍøÂç£¬°æÈ¨¹éÆä×÷ÕßËùÓĞ¡£
+    rem ±¾ÈËÔÚ´Ë±íÊ¾¸ĞĞ»¡£
     
     color 0a
-    title   ç¡¬ä»¶æ£€æµ‹     
+    title   Ó²¼ş¼ì²â     
     mode con cols=90
     sc config winmgmt start= auto >nul 2<&1
     net start winmgmt 2>1nul
     setlocal ENABLEDELAYEDEXPANSION
-    echo ä¸»ç‰ˆ:
+    echo Ö÷°æ:
     for /f "tokens=1,* delims==" %%a in ('wmic BASEBOARD get Manufacturer^,Product^,Version^,SerialNumber /value') do (
       set /a tee+=1
-      if "!tee!" == "3" echo     åˆ¶é€ å•†   = %%b
-      if "!tee!" == "4" echo     å‹ å·   = %%b
-      if "!tee!" == "5" echo     åºåˆ—å·   = %%b
-      if "!tee!" == "6" echo     ç‰ˆ æœ¬   = %%b
+      if "!tee!" == "3" echo     ÖÆÔìÉÌ   = %%b
+      if "!tee!" == "4" echo     ĞÍ ºÅ   = %%b
+      if "!tee!" == "5" echo     ĞòÁĞºÅ   = %%b
+      if "!tee!" == "6" echo     °æ ±¾   = %%b
     )
     set tee=0
     echo     BIOS:
     for /f "tokens=1,* delims==" %%a in ('wmic bios get 
     CurrentLanguage^,Manufacturer^,SMBIOSBIOSVersion^,SMBIOSMajorVersion^,SMBIOSMinorVersion^,ReleaseDate /value') do (
       set /a tee+=1
-      if "!tee!" == "3" echo     å½“å‰è¯­è¨€ = %%b
-      if "!tee!" == "4" echo     åˆ¶é€ å•†   = %%b
-      if "!tee!" == "5" echo     å‘è¡Œæ—¥æœŸ = %%b
-      if "!tee!" == "6" echo     ç‰ˆ æœ¬   = %%b
+      if "!tee!" == "3" echo     µ±Ç°ÓïÑÔ = %%b
+      if "!tee!" == "4" echo     ÖÆÔìÉÌ   = %%b
+      if "!tee!" == "5" echo     ·¢ĞĞÈÕÆÚ = %%b
+      if "!tee!" == "6" echo     °æ ±¾   = %%b
       if "!tee!" == "7" echo     SMBIOSMajorVersion = %%b
       if "!tee!" == "8" echo     SMBIOSMinorVersion = %%b 
     )
@@ -34,81 +34,81 @@
     echo CPU:
     for /f "tokens=1,* delims==" %%a in ('wmic cpu get name^,ExtClock^,CpuStatus^,Description /value') do (
       set /a tee+=1
-      if "!tee!" == "3" echo     CPUä¸ªæ•°   = %%b
-      if "!tee!" == "4" echo     å¤„ç†å™¨ç‰ˆæœ¬   = %%b
-      if "!tee!" == "5" echo     å¤–   é¢‘   = %%b
-      if "!tee!" == "6" echo     åç§°åŠä¸»é¢‘ç‡   = %%b
+      if "!tee!" == "3" echo     CPU¸öÊı   = %%b
+      if "!tee!" == "4" echo     ´¦ÀíÆ÷°æ±¾   = %%b
+      if "!tee!" == "5" echo     Íâ   Æµ   = %%b
+      if "!tee!" == "6" echo     Ãû³Æ¼°Ö÷ÆµÂÊ   = %%b
     )
     set tee=0
     echo.
-    echo æ˜¾ç¤ºå™¨:
+    echo ÏÔÊ¾Æ÷:
     for /f "tokens=1,* delims==" %%a in ('wmic DESKTOPMONITOR get name^,ScreenWidth^,ScreenHeight^,PNPDeviceID /value') do (
       set /a tee+=1
-      if "!tee!" == "3" echo     ç±»   å‹ = %%b
-      if "!tee!" == "4" echo     å…¶ä»–ä¿¡æ¯ = %%b
-      if "!tee!" == "5" echo     å±å¹•é«˜   = %%b
-      if "!tee!" == "6" echo     å±å¹•å®½   = %%b
+      if "!tee!" == "3" echo     Àà   ĞÍ = %%b
+      if "!tee!" == "4" echo     ÆäËûĞÅÏ¢ = %%b
+      if "!tee!" == "5" echo     ÆÁÄ»¸ß   = %%b
+      if "!tee!" == "6" echo     ÆÁÄ»¿í   = %%b
     )
     set tee=0
     echo.
-    echo ç¡¬ ç›˜:
+    echo Ó² ÅÌ:
     for /f "tokens=1,* delims==" %%a in ('wmic DISKDRIVE get model^,interfacetype^,size^,totalsectors^,partitions /value') do (
       set /a tee+=1
-      if "!tee!" == "3" echo     æ¥å£ç±»å‹ = %%b
-      if "!tee!" == "4" echo     ç¡¬ç›˜å‹å· = %%b
-      if "!tee!" == "5" echo     åˆ†åŒºæ•°   = %%b
-      if "!tee!" == "6" echo     å®¹   é‡ = %%b
-      if "!tee!" == "7" echo     æ€»æ‰‡åŒº   = %%b
+      if "!tee!" == "3" echo     ½Ó¿ÚÀàĞÍ = %%b
+      if "!tee!" == "4" echo     Ó²ÅÌĞÍºÅ = %%b
+      if "!tee!" == "5" echo     ·ÖÇøÊı   = %%b
+      if "!tee!" == "6" echo     Èİ   Á¿ = %%b
+      if "!tee!" == "7" echo     ×ÜÉÈÇø   = %%b
     )
-    echo åˆ†åŒºä¿¡æ¯:
+    echo ·ÖÇøĞÅÏ¢:
     wmic LOGICALDISK where mediatype='12' get description,deviceid,filesystem,size,freespace
     set tee=0
     echo.
-    echo ç½‘ å¡:
+    echo Íø ¿¨:
     for /f "tokens=1,* delims==" %%a in ('wmic NICCONFIG where "index='1'" get ipaddress^,macaddress^,description /value') do (
       set /a tee+=1
-      if "!tee!" == "3" echo     ç½‘å¡ç±»å‹ = %%b
-      if "!tee!" == "4" echo     ç½‘å¡IP   = %%b
-      if "!tee!" == "5" echo     ç½‘å¡MAC   = %%b
+      if "!tee!" == "3" echo     Íø¿¨ÀàĞÍ = %%b
+      if "!tee!" == "4" echo     Íø¿¨IP   = %%b
+      if "!tee!" == "5" echo     Íø¿¨MAC   = %%b
     )
     set tee=0
     echo.
-    echo æ‰“å°æœº:
+    echo ´òÓ¡»ú:
     for /f "tokens=1,* delims==" %%a in ('wmic PRINTER get caption /value') do (
       set /a tee+=1
-      if "!tee!" == "3" echo     æ‰“å°æœºåå­— = %%b
+      if "!tee!" == "3" echo     ´òÓ¡»úÃû×Ö = %%b
     )
     set tee=0
     echo.
-    echo å£°   å¡:
+    echo Éù   ¿¨:
     for /f "tokens=1,* delims==" %%a in ('wmic SOUNDDEV get name^,deviceid /value') do (
       set /a tee+=1
-      if "!tee!" == "3" echo     å…¶ä»–ä¿¡æ¯ = %%b
-      if "!tee!" == "4" echo     å‹   å· = %%b
+      if "!tee!" == "3" echo     ÆäËûĞÅÏ¢ = %%b
+      if "!tee!" == "4" echo     ĞÍ   ºÅ = %%b
     )
     set tee=0
     echo.
-    echo å†…   å­˜: 
-    for /f "tokens=1,* delims==" %%a in ('systeminfo^|find "å†…å­˜"') do (
+    echo ÄÚ   ´æ: 
+    for /f "tokens=1,* delims==" %%a in ('systeminfo^|find "ÄÚ´æ"') do (
       echo       %%a 4534 %%b 
     )
     echo.
-    echo æ˜¾   å¡:
+    echo ÏÔ   ¿¨:
     del /f "%TEMP%\temp.txt" 2>nul
     dxdiag /t %TEMP%\temp.txt
-    :æ˜¾å¡
-    rem è¿™é‡Œéœ€è¦30ç§’å·¦å³!
+    :ÏÔ¿¨
+    rem ÕâÀïĞèÒª30Ãë×óÓÒ!
     if EXIST "%TEMP%\temp.txt" (
       for /f "tokens=1,2,* delims=:" %%a in ('findstr /c:" Card name:" /c:"Display Memory:" /c:"Current Mode:" "%TEMP%\temp.txt"') do (
           set /a tee+=1
-          if !tee! == 1 echo   æ˜¾å¡å‹å·: %%b
-          if !tee! == 2 echo   æ˜¾å­˜å¤§å°: %%b
-          if !tee! == 3 echo   å½“å‰è®¾ç½®: %%b
+          if !tee! == 1 echo   ÏÔ¿¨ĞÍºÅ: %%b
+          if !tee! == 2 echo   ÏÔ´æ´óĞ¡: %%b
+          if !tee! == 3 echo   µ±Ç°ÉèÖÃ: %%b
     )   ) else (
       ping /n 2 127.1>nul
-      goto æ˜¾å¡
+      goto ÏÔ¿¨
     )
-    set /p var=éœ€è¦é¢å¤–ä¿¡æ¯å—(y/n): 
+    set /p var=ĞèÒª¶îÍâĞÅÏ¢Âğ(y/n): 
     if /i %var% == y notepad "%TEMP%\temp.txt"
     del /f "%TEMP%\temp.txt" 2>nul
     pause
