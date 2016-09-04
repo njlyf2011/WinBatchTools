@@ -1,13 +1,18 @@
 @echo off
 
 rem Windows Batch Tools  Copyright (C) 2016 NJLYF2011
-rem 本软件不附带额外保证。此外，它是自由软件，您可以在遵守 GNU GPL v3
-rem 许可证的前提下对这款软件进行修改、再发布。
+rem 本程序从未提供品质担保。这是款自由软件，欢迎你在满足一定条件后对其再发布。
 
 cls
-title 修改计算机名称
+title 修改计算机名称。
+
+rem 以防万一！
+set name=
+set reboot=
 
 set /p name= 请输您的计算机名：
+
+rem 原理不用多说，看看相关的注册表项就知道。
 reg add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\ComputerName\ActiveComputerName" /v ComputerName /t reg_sz /d %name% /f
 reg add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Tcpip\Parameters" /v "NV Hostname" /t reg_sz /d %name% /f 
 reg add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Tcpip\Parameters" /v Hostname /t reg_sz /d %name% /f 

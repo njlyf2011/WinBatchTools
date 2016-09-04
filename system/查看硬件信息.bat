@@ -1,7 +1,6 @@
     @echo off
     
     rem 版权声明：下面的代码来源于网络，版权归其作者所有。
-    rem 本人在此表示感谢。
     
     color 0a
     title   硬件检测     
