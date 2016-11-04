@@ -1,5 +1,11 @@
 ﻿# 更改日志
 
+#### 2016.11.04
+增加[“简易文本创建器”](https://github.com/njlyf2011/WinBatchTools/blob/master/file/简易文本创建器.bat”) 尚未完善
+
+#### 2016.11.03
+文档格式变更为 MarkDown (更改者：Leo)
+
 #### 2016.10.17
 增加[“Unix命令转Win命令”](https://github.com/njlyf2011/WinBatchTools/tree/master/unix)（实验性）
 
