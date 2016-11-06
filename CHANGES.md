@@ -1,5 +1,8 @@
 ﻿# 更改日志
 
+#### 2016.11.06
+修复从GitHub下载单个文件或整个仓库ZIP包后无法运行批处理文件的问题
+
 #### 2016.11.04
 增加[“简易文本创建器”](https://github.com/njlyf2011/WinBatchTools/blob/master/file/简易文本创建器.bat”) 尚未完善
 
