@@ -1,5 +1,8 @@
 ﻿# 更改日志
 
+#### 2016.11.10
+增加["screenFetch-win"](https://github.com/njlyf2011/WinBatchTools/blob/master/file/screenfetch.bat)
+
 #### 2016.11.06
 修复从GitHub下载整个仓库ZIP包后无法运行批处理文件的问题
 
