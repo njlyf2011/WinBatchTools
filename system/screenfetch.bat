@@ -3,7 +3,6 @@
 rem Windows Batch Tools Copyright (C) 2016 NJLYF2011, Leo3418
 rem 本程序从未提供品质担保。这是款自由软件，欢迎你在满足一定条件后对其再发布。
 
-title screenfetch-win
 setlocal ENABLEDELAYEDEXPANSION
 
 rem 如果指定/h选项，显示帮助
@@ -62,7 +61,7 @@ ver | find "10.0." > NUL &&  goto post7
 :pre8
 echo          `,:,`               %user%
 echo       .:::::::::`            OS: %os%
-echo       :::::::::; :;:     `;  系统类型: %type%
+echo       :::::::::; :;:     `;  Kernel: Windows NT
 echo      .:::::::::  ;;;;;;;;;;  启动时间: %boottime:~12%
 echo      :::::::::; ;;;;;;;;;;   CPU: %cpu%
 echo     ,;.    .;:  ;;;;;;;;;;   RAM: %availram:~11% 可用，共 %totalram:~12%
@@ -80,7 +79,7 @@ goto end
 :post7
 echo                     ....:::  %user%
 echo         .... ::::::::::::::  OS: %os%
-echo  ::::::::::. ::::::::::::::  系统类型: %type%
+echo  ::::::::::. ::::::::::::::  Kernel: Windows NT
 echo  ::::::::::. ::::::::::::::  启动时间: %boottime:~12%
 echo  ::::::::::. ::::::::::::::  CPU: %cpu%
 echo  ::::::::::. ::::::::::::::  RAM: %availram:~11% 可用，共 %totalram:~12%
