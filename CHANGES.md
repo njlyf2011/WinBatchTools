@@ -1,5 +1,8 @@
 ﻿# 更改日志
 
+#### 2017.07.30
+修改介绍，删除某些多余文件。
+
 #### 2016.11.10
 增加["screenFetch-win"](https://github.com/njlyf2011/WinBatchTools/blob/master/file/screenfetch.bat)
 
