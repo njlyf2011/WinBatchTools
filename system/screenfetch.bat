@@ -61,9 +61,9 @@ ver | find "10.0." > NUL &&  goto post7
 echo          `,:,`               %user%
 echo       .:::::::::`            OS: %os%
 echo       :::::::::; :;:     `;  Kernel: Windows NT
-echo      .:::::::::  ;;;;;;;;;;  启动时间: %boottime:~12%
+echo      .:::::::::  ;;;;;;;;;;  Uptime: %boottime:~12%
 echo      :::::::::; ;;;;;;;;;;   CPU: %cpu%
-echo     ,;.    .;:  ;;;;;;;;;;   RAM: %availram:~11% 可用，共 %totalram:~12%
+echo     ,;.    .;:  ;;;;;;;;;;   RAM: %availram:~11% / %totalram:~12%
 echo      ,:::::,   ;;;;;;;;;;   
 echo    .:::::::::    .;;;;:     
 echo    :::::::::: ::::.``,::    
@@ -72,16 +72,16 @@ echo   :::::::::: ::::::::::
 echo  ,.      ,:  ::::::::::     
 echo             ,:::::::::      
 echo                 ``          
-pause
+pause>nul
 goto end
 
 :post7
 echo                     ....:::  %user%
 echo         .... ::::::::::::::  OS: %os%
 echo  ::::::::::. ::::::::::::::  Kernel: Windows NT
-echo  ::::::::::. ::::::::::::::  启动时间: %boottime:~12%
+echo  ::::::::::. ::::::::::::::  Uptime: %boottime:~12%
 echo  ::::::::::. ::::::::::::::  CPU: %cpu%
-echo  ::::::::::. ::::::::::::::  RAM: %availram:~11% 可用，共 %totalram:~12%
+echo  ::::::::::. ::::::::::::::  RAM: %availram:~11% / %totalram:~12%
 echo  ``````````  `````````````` 
 echo  ::::::::::. :::::::::::::: 
 echo  ::::::::::. :::::::::::::: 
@@ -91,7 +91,7 @@ echo  ::::::::::. ::::::::::::::
 echo         ^^^^^^. :::::::::::::: 
 echo                     ^^^^^^^^::: 
 rem 两个连续的 ^ 符号才能被识别为一个 ^
-pause
+pause>nul
 goto end
 
 rem 纵排模式
@@ -145,10 +145,10 @@ if "%1"=="/L" goto end
 :nologo
 echo %user%
 echo OS: %os%
-echo 系统类型: %type%
-echo 启动时间: %boottime:~12%
+echo Kernel: %type%
+echo Uptime: %boottime:~12%
 echo CPU: %cpu%
-echo RAM: %availram:~11% 可用，共 %totalram:~12%
+echo RAM: %availram:~11% / 共 %totalram:~12%
 goto end
 
 :help
