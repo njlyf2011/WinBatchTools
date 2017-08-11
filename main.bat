@@ -9,6 +9,8 @@ cls
 echo.
 echo 欢迎使用WinBatchTools，请选择您的操作
 echo.
+echo 某些操作可能需要管理员权限，要执行这些操作，请以管理员身份运行本程序。
+echo.
 echo 文件操作：
 echo (1)创建文本文件
 echo 网络操作：
