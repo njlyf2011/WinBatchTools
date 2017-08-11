@@ -25,7 +25,7 @@ echo (14)启用USB设备		(15)去除箭头
 echo (16)提取用户列表		(17)修改软件默认安装盘符
 echo (18)重命名计算机		(19)修改当前系统主题
 echo 其它操作：
-echo (20)进入类unix命令行（只支持部分linux命令）
+echo (20)进入“Unix 命令转 Windows 命令”
 echo (21)退出程序
 :cho
 set /p cho= 请选择：
