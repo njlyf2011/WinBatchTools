@@ -20,7 +20,7 @@ if (agcho==Y) goto start
 exit
 
 :cho
-echo 文件已经存在，文件内容将会被覆盖！是否继续？（输入Y继续，否则将进入输入路径的部分）
+echo 文件已经存在，文件内容将会被覆盖！是否继续？（输入Y继续，否则您需要重新输入路径）
 set /p cho= 请选择：
 if(cho==Y) goto edit
 goto start
