@@ -26,9 +26,10 @@ echo (13)旧式文件清理		(13)批量修复DLL注册
 echo (15)启用USB设备		(16)去除箭头
 echo (17)提取用户列表		(18)修改软件默认安装盘符
 echo (19)重命名计算机		(20)修改当前系统主题
+echo (21)软件授权管理
 echo 其它操作：
-echo (21)进入“Unix 命令转 Windows 命令”
-echo (21)退出程序
+echo (22)进入“Unix 命令转 Windows 命令”
+echo (23)退出程序
 :cho
 set /p cho= 请选择：
 if %cho% EQU 1 .\file\简易文本创建器
@@ -51,8 +52,9 @@ if %cho% EQU 17 .\system\提取用户列表
 if %cho% EQU 18 .\system\修改软件默认安装盘符
 if %cho% EQU 19 .\system\重命名计算机
 if %cho% EQU 20 .\visual\修改当前系统主题
-if %cho% EQU 21 .\unix\dash
-if %cho% EQU 22 cmd
+if %cho% EQU 21 .\system\授权管理
+if %cho% EQU 22 .\unix\dash
+if %cho% EQU 23 cmd
 title WinBatchTools
 goto cho
 
