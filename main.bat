@@ -21,7 +21,7 @@ echo (6)查看内网所有IP地址
 echo 系统操作：
 echo (7)screenfetch		(8)查看进程
 echo (9)查看硬件信息		(10)定时关机
-echo (11)检查文件完整性		(12)禁用USB设备
+echo (11)检查系统文件完整性		(12)禁用USB设备
 echo (13)旧式文件清理		(13)批量修复DLL注册
 echo (15)启用USB设备		(16)去除箭头
 echo (17)提取用户列表		(18)修改软件默认安装盘符
@@ -42,7 +42,7 @@ if %cho% EQU 7 .\system\screenfetch
 if %cho% EQU 8 .\system\查看进程
 if %cho% EQU 9 .\system\查看硬件信息
 if %cho% EQU 10 .\system\定时关机
-if %cho% EQU 11 .\system\检查文件完整性
+if %cho% EQU 11 .\system\检查系统文件完整性
 if %cho% EQU 12 .\system\禁用USB设备
 if %cho% EQU 13 .\system\旧式文件清理
 if %cho% EQU 14 .\system\批量修复DLL注册
@@ -55,6 +55,5 @@ if %cho% EQU 20 .\visual\修改当前系统主题
 if %cho% EQU 21 .\system\授权管理
 if %cho% EQU 22 .\unix\dash
 if %cho% EQU 23 cmd
-title WinBatchTools
-goto cho
+
 
