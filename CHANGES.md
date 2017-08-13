@@ -1,7 +1,13 @@
 ﻿# 更改日志
 
+#### 2017.8.13
+小改 ["主程序文件"](https://github.com/njlyf2011/WinBatchTools/blob/master/main.bat) 增加功能及修正格式上的一些问题。
+增加 [“获取文件列表.bat”](https://github.com/njlyf2011/WinBatchTools/blob/master/file/获取文件列表.bat)
+以上更改者为 NJLYF2011 。
+
 #### 2017.8.11
 增加了主程序文件，“Unix命令转Win命令”增加了部分unix兼容命令。（更改者：lini3acc）
+修改 ["screenFetch-win"](https://github.com/njlyf2011/WinBatchTools/blob/master/file/screenfetch.bat) （更改者：NJLYF2011）
 
 #### 2017.07.30
 修改介绍，删除某些多余文件。
