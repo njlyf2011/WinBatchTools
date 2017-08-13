@@ -13,23 +13,23 @@ echo 某些操作可能需要管理员权限，要执行这些操作，请以管理员身份运行本程序。
 echo 执行完操作后，程序可能会自动退出。
 echo.
 echo 文件操作：
-echo (1)创建文本文件            (2)获取文件列表
+echo (1)创建文本文件         (2)获取文件列表
 echo 网络操作：
 echo (3)测试网络是否通畅	(4)查看工作组
 echo (5)查看网络信息		(6)校对时间
 echo (7)查看内网所有IP地址
 echo 系统操作：
 echo (8)screenfetch		(9)查看进程
-echo (10)查看硬件信息		(11)定时关机
-echo (12)检查系统文件完整性		(13)禁用USB设备
-echo (14)旧式文件清理		(15)批量修复DLL注册
+echo (10)查看硬件信息	(11)定时关机
+echo (12)检查系统文件完整性	(13)禁用USB设备
+echo (14)旧式文件清理	(15)批量修复DLL注册
 echo (16)启用USB设备		(17)去除箭头
-echo (18)提取用户列表		(19)修改软件默认安装盘符
-echo (20)重命名计算机		(21)修改当前系统主题
-echo (22)软件授权管理
+echo (18)提取用户列表	(19)修改软件默认安装盘符
+echo (20)重命名计算机	(21)修改当前系统主题
+echo (22)软件授权管理        (23)查看系统版本信息
 echo 其它操作：
-echo (23)进入“Unix 命令转 Windows 命令”
-echo (24)退出程序
+echo (24)进入“Unix 命令转 Windows 命令”
+echo (25)退出程序
 :cho
 echo.
 set /p cho= 请选择：
@@ -57,7 +57,8 @@ if %cho% EQU 19 .\system\修改软件默认安装盘符
 if %cho% EQU 20 .\system\重命名计算机
 if %cho% EQU 21 .\visual\修改当前系统主题
 if %cho% EQU 22 .\system\授权管理
-if %cho% EQU 23 .\unix\dash
-if %cho% EQU 24 cmd
+if %cho% EQU 23 %windir%\system32\winver
+if %cho% EQU 24 .\unix\dash
+if %cho% EQU 25 cmd
 
 
