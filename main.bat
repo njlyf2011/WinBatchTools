@@ -27,6 +27,7 @@ echo (16)启用USB设备		(17)去除箭头
 echo (18)提取用户列表	(19)修改软件默认安装盘符
 echo (20)重命名计算机	(21)修改当前系统主题
 echo (22)软件授权管理        (23)查看系统版本信息
+echo (24)DISM简易辅助工具(Beta)
 echo 其它操作：
 echo (24)进入“Unix 命令转 Windows 命令”
 echo (25)退出程序
@@ -57,7 +58,8 @@ if %cho% EQU 20 .\system\重命名计算机
 if %cho% EQU 21 .\visual\修改当前系统主题
 if %cho% EQU 22 .\system\授权管理
 if %cho% EQU 23 %windir%\system32\winver
-if %cho% EQU 24 .\unix\dash
-if %cho% EQU 25 cmd
+if %cho% EQU 24 .\system\DISM_TOOL
+if %cho% EQU 25 .\unix\dash
+if %cho% EQU 26 cmd
 goto cho
 
