@@ -34,7 +34,6 @@ echo (25)退出程序
 echo.
 set /p cho= 请选择：
 echo.
-echo.
 if %cho% EQU 1 .\file\简易文本创建器
 if %cho% EQU 2 .\file\获取文件列表
 if %cho% EQU 3 .\network\测试网络是否通畅
@@ -60,5 +59,5 @@ if %cho% EQU 22 .\system\授权管理
 if %cho% EQU 23 %windir%\system32\winver
 if %cho% EQU 24 .\unix\dash
 if %cho% EQU 25 cmd
-
+goto cho
 
