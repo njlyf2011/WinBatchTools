@@ -40,14 +40,17 @@
 #### 2017.8.11
 增加 ["查看内网所有IP地址"]((https://github.com/njlyf2011/WinBatchTools/blob/master/network/查看内网所有IP地址.bat) （更改者：lini3acc）
 
-增加、修改 ["主程序文件"](https://github.com/njlyf2011/WinBatchTools/blob/master/main.bat) 。（更改者：lini3acc）
+增加、修改 ["主程序文件"](https://github.com/njlyf2011/WinBatchTools/blob/master/main.bat)。（更改者：lini3acc）
 
 修改 ["screenFetch-win"](https://github.com/njlyf2011/WinBatchTools/blob/master/file/screenfetch.bat) （更改者：NJLYF2011）
 
 增加一些 Unix 命令 （更改者：lini3acc）
 
 #### 2017.07.30
-修改介绍，删除中文版许可证（不需要）。
+修改介绍，删除中文版许可证（不需要，更改者：NJLYF2011）。
+
+#### 2017.02.14
+增加介绍网页 （更改者：NJLYF2011）
 
 #### 2016.11.10
 增加["screenFetch-win"](https://github.com/njlyf2011/WinBatchTools/blob/master/file/screenfetch.bat)
