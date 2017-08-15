@@ -29,8 +29,8 @@ echo (20)重命名计算机	(21)修改当前系统主题
 echo (22)软件授权管理        (23)查看系统版本信息
 echo (24)DISM简易辅助工具(Beta)
 echo 其它操作：
-echo (24)进入“Unix 命令转 Windows 命令”
-echo (25)退出程序
+echo (25)进入“Unix 命令转 Windows 命令”
+echo (26)退出程序
 :cho
 echo.
 set /p cho= 请选择：
@@ -60,6 +60,7 @@ if %cho% EQU 22 .\system\授权管理
 if %cho% EQU 23 %windir%\system32\winver
 if %cho% EQU 24 .\system\DISM_TOOL
 if %cho% EQU 25 .\unix\dash
-if %cho% EQU 26 cmd
+if %cho% EQU 26 goto end
 goto cho
+:end
 
