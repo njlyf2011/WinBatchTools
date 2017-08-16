@@ -59,7 +59,7 @@ if "%comorn%"=="Y" (
     dism /Unmount-Image /MountDir:%mntdir% /Commit
     goto ch
 )
-dism /Unmount-Image /MountDir:%mntdir%
+dism /Unmount-Image /MountDir:%mntdir% /Discard
 goto ch
 :ch5
 echo 此功能将在未来加入，敬请期待！
