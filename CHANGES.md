@@ -1,7 +1,7 @@
 ﻿# 更改日志
 
 #### 2017.8.18
-更新了[README.md]（增加了程序截图）
+更新了["README.md"](https://github.com/njlyf2011/WinBatchTools/blob/master/README.md)，增加了程序截图（更改者：lini3acc）
 
 #### 2017.8.15
 完善 ["DISM 简易辅助工具"](https://github.com/njlyf2011/WinBatchTools/blob/master/system/DISM_TOOL.bat)（更改者：lini3acc）
