@@ -17,7 +17,7 @@
 |README.md|此文件|
 |CHANGES.md|更改日志|
 
-### 目录
+## 目录
 |目录名|说明|
 |:---:|:---|
 |extra|放一些额外的东西，比如文件开头|
@@ -26,5 +26,5 @@
 |visual|系统美化之类|
 |unix|Unix 命令转 Windows 命令|
 
-#### 界面截图
+## 界面截图
 ![](https://user-images.githubusercontent.com/17170467/29459497-77ccc44c-8456-11e7-8137-d5f826e20435.png)
