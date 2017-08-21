@@ -27,7 +27,7 @@ echo (16)启用USB设备		(17)去除箭头
 echo (18)提取用户列表	(19)修改软件默认安装盘符
 echo (20)重命名计算机	(21)修改当前系统主题
 echo (22)软件授权管理        (23)查看系统版本信息
-echo (24)DISM简易辅助工具(Beta)
+echo (24)DISM简易辅助工具(1.0 Beta For WinBatchTools)
 echo 其它操作：
 echo (25)进入“Unix 命令转 Windows 命令”
 echo (26)退出程序
