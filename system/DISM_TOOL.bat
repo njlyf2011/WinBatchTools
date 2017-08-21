@@ -1,10 +1,10 @@
-rem WinBashTools Copyright 2017 lini3acc(追求i3的孩纸)
+rem WinBatchTools Copyright 2017 lini3acc(追求i3的孩纸)
 rem 本程序从未提供品质担保。这是款自由软件，欢迎你在满足一定条件后对其再发布。
 
 @echo off
 cls
 echo.
-echo DISM简易辅助工具(Beta)
+echo DISM简易辅助工具 1.0 Beta for WinBatchTools
 echo.
 echo 注意：本程序需要以管理员身份运行！
 echo.
@@ -14,7 +14,7 @@ echo (1)获取镜像信息
 echo (2)挂载镜像
 echo (3)展开镜像
 echo (4)卸载镜像
-echo (5)将目录保存到镜像
+echo (5)将目录捕获到镜像
 echo (6)退出本程序
 echo.
 :ch
@@ -50,7 +50,10 @@ if "%idx%"=="0" (
 dism /Mount-Image /ImageFile:%imgfile% /Index:%idx% /MountDir:%mntdir%
 goto ch
 :ch3
-echo 此功能将在未来加入，敬请期待！
+set /p imgfile= 请输入镜像文件的位置（如果目录有空格，请打双引号）：
+set /p mntdir= 请输入镜像展开目录（如果目录有空格，请打双引号）：
+set /p idx= 请输入镜像索引号（如没有则输入0）：
+dism /Apply-Image /ImageFile:%imgfile% /Index:%idx% /ApplyDir:%mntdir%
 goto ch
 :ch4
 set /p mntdir= 请输入镜像挂载目录（如果目录有空格，请打双引号）：
@@ -62,6 +65,9 @@ if "%comorn%"=="Y" (
 dism /Unmount-Image /MountDir:%mntdir% /Discard
 goto ch
 :ch5
-echo 此功能将在未来加入，敬请期待！
+set /p cptdir= 请输入欲捕获并保存到镜像的目录（如果目录有空格，请打双引号）：
+set /p imgfile= 请输入镜像文件的位置（如果目录有空格，请打双引号）：
+set /p name= 请输入镜像名称（如有空格，请打双引号）：
+dism /Capture-Image /ImageFile:%imgfile% /CaptureDir:%cptdir% /Name:%name%
 goto ch
 :end
