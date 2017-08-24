@@ -13,7 +13,7 @@
 |文件名|说明|
 |:---:|:---|
 |LICENSE.md|GNU GPL v3 许可证|  
-|main.bat|主程序文件，方便执行操作|
+|main.bat|主程序文件|
 |README.md|此文件|
 |CHANGES.md|更改日志|
 
