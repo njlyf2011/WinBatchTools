@@ -1,15 +1,18 @@
 ﻿# 更改日志
 
+#### 2017.8.27
+将["Unix 命令转 Windows 命令"](https://github.com/njlyf2011/WinBatchTools/tree/master/unix) 中部分unix兼容命令使用doskey改写，避免更改目录后命令无效的问题。同时删除了多余文件。（更改者：i3boyacc）
+
 #### 2017.8.21
-更新并完善了 ["DISM 简易辅助工具"](https://github.com/njlyf2011/WinBatchTools/blob/master/system/DISM_TOOL.bat)（更改者：lini3acc）
+更新并完善了 ["DISM 简易辅助工具"](https://github.com/njlyf2011/WinBatchTools/blob/master/system/DISM_TOOL.bat)（更改者：i3boyacc）
 
 #### 2017.8.18
-更新了["README.md"](https://github.com/njlyf2011/WinBatchTools/blob/master/README.md)，增加了程序截图（更改者：lini3acc）
+更新了["README.md"](https://github.com/njlyf2011/WinBatchTools/blob/master/README.md)，增加了程序截图（更改者：i3boyacc）
 
 #### 2017.8.15
-完善 ["DISM 简易辅助工具"](https://github.com/njlyf2011/WinBatchTools/blob/master/system/DISM_TOOL.bat)（更改者：lini3acc）
+完善 ["DISM 简易辅助工具"](https://github.com/njlyf2011/WinBatchTools/blob/master/system/DISM_TOOL.bat)（更改者：i3boyacc）
 
-修改 ["主程序文件"](https://github.com/njlyf2011/WinBatchTools/blob/master/main.bat) 的结束命令。（更改者：lini3acc）
+修改 ["主程序文件"](https://github.com/njlyf2011/WinBatchTools/blob/master/main.bat) 的结束命令。（更改者：i3boyacc）
 
 修改文件开头 （更改者：NJLYF2011）
 
@@ -24,33 +27,33 @@
 发布 1.1-beta（更改者：NJLYF2011）
 
 #### 2017.8.13
-增加 DISM 简易辅助工具（尚不完善，更改者：lini3acc）
+增加 DISM 简易辅助工具（尚不完善，更改者：i3boyacc）
 
-修改文件结束说明（更改者：lini3acc）
+修改文件结束说明（更改者：i3boyacc）
 
 小改 ["主程序文件"](https://github.com/njlyf2011/WinBatchTools/blob/master/main.bat) 增加功能及修正格式上的一些问题。（更改者：NJLYF2011）
 
 增加 [“获取文件列表.bat”](https://github.com/njlyf2011/WinBatchTools/blob/master/file/获取文件列表.bat) （更改者：NJLYF2011）
 
 #### 2017.08.12
-增加 ["软件授权管理工具"](https://github.com/njlyf2011/WinBatchTools/blob/master/system/授权管理.bat)（更改者：lini3acc）
+增加 ["软件授权管理工具"](https://github.com/njlyf2011/WinBatchTools/blob/master/system/授权管理.bat)（更改者：i3boyacc）
 
-修改 [“简易文本创建器”](https://github.com/njlyf2011/WinBatchTools/blob/master/file/简易文本创建器.bat”) （更改者：lini3acc）
+修改 [“简易文本创建器”](https://github.com/njlyf2011/WinBatchTools/blob/master/file/简易文本创建器.bat”) （更改者：i3boyacc）
 
-修改 ["主程序文件"](https://github.com/njlyf2011/WinBatchTools/blob/master/main.bat) 。（更改者：lini3acc）（更改者：lini3acc）
+修改 ["主程序文件"](https://github.com/njlyf2011/WinBatchTools/blob/master/main.bat) 。（更改者：i3boyacc）（更改者：i3boyacc）
 
-修复["查看进程"](https://github.com/njlyf2011/WinBatchTools/blob/master/system/查看进程.bat) 排版问题（更改者：lini3acc）
+修复["查看进程"](https://github.com/njlyf2011/WinBatchTools/blob/master/system/查看进程.bat) 排版问题（更改者：i3boyacc）
 
-将 ["查看进程"]((https://github.com/njlyf2011/WinBatchTools/blob/master/system/查看进程.bat)加入[忽略规则]((https://github.com/njlyf2011/WinBatchTools/blob/master/.gitignore)（更改者：lini3acc）
+将 ["查看进程"]((https://github.com/njlyf2011/WinBatchTools/blob/master/system/查看进程.bat)加入[忽略规则]((https://github.com/njlyf2011/WinBatchTools/blob/master/.gitignore)（更改者：i3boyacc）
 
 #### 2017.8.11
-增加 ["查看内网所有IP地址"]((https://github.com/njlyf2011/WinBatchTools/blob/master/network/查看内网所有IP地址.bat) （更改者：lini3acc）
+增加 ["查看内网所有IP地址"]((https://github.com/njlyf2011/WinBatchTools/blob/master/network/查看内网所有IP地址.bat) （更改者：i3boyacc）
 
-增加、修改 ["主程序文件"](https://github.com/njlyf2011/WinBatchTools/blob/master/main.bat)。（更改者：lini3acc）
+增加、修改 ["主程序文件"](https://github.com/njlyf2011/WinBatchTools/blob/master/main.bat)。（更改者：i3boyacc）
 
 修改 ["screenFetch-win"](https://github.com/njlyf2011/WinBatchTools/blob/master/file/screenfetch.bat) （更改者：NJLYF2011）
 
-增加一些 Unix 命令 （更改者：lini3acc）
+增加一些 Unix 命令 （更改者：i3boyacc）
 
 #### 2017.07.30
 修改介绍，删除中文版许可证（不需要，更改者：NJLYF2011）。
