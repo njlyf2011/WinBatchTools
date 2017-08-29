@@ -1,6 +1,6 @@
 @echo off
 
-rem Windows Batch Tools Copyright (C) 2016 NJLYF2011
+rem Windows Batch Tools Copyright (C) 2016-2017 NJLYF2011,i3boyacc
 rem 本程序从未提供品质担保。这是款自由软件，欢迎你在满足一定条件后对其再发布。
 
 title 简易文本创建器
