@@ -26,7 +26,7 @@ title 获取指定目录文件列表
  set /p save_result= 是否保留结果？(Y/N):
  if  "%save_result%"=="Y"  copy %temp%\showpath.txt %cd%\result.txt
  if  "%save_result%"=="YES"  copy %temp%\showpath.txt %cd%\result.txt
- rem 特么居然要大小写
+ rem 大小写区分
  if  "%save_result%"=="y"  copy %temp%\showpath.txt %cd%\result.txt
  if  "%save_result%"=="yes"  copy %temp%\showpath.txt %cd%\result.txt
  
