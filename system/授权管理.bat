@@ -1,5 +1,7 @@
 rem WinBashTools Copyleft 2017 lini3acc(追求i3的孩纸)
 rem 本程序从未提供品质担保。这是款自由软件，欢迎你在满足一定条件后对其再发布。
+rem 本工具请不要用于盗版激活用途！！！
+rem Licensed under the GNU GPLv3 license.
 
 title 软件授权管理工具
 @echo off
@@ -9,6 +11,8 @@ echo.
 echo 软件授权管理工具
 echo.
 echo 以下所有操作均需要管理员权限。如果您没有以管理员身份运行本程序，请按要求重新运行本程序。
+echo 本程序请不要用于盗版激活用途，尤其是商业性质的。否则可能会造成法律问题。
+echo.
 echo.
 echo 查看产品许可：
 echo (1)查看系统许可信息    (2)查看系统详细许可信息

@@ -1,6 +1,6 @@
 @echo off
 
-rem 下面的批处理代码来源于网络，属于公有领域。
+rem 下面的批处理代码来源于网络
 
 title 禁用 USB 设备
 echo.
