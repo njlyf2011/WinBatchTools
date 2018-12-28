@@ -1,5 +1,8 @@
 ﻿# 更改日志
 
+#### 2018.12.28
+重新开坑，将默认许可改为 MIT License，但考虑到已经有朋友以 GPLv3 贡献代码，这些代码但许可我不能自作主张更高，所以保留原许可。（更改者：NJLYF2011，以后称为 Luo Yufan）
+
 #### 2017.8.27
 将["Unix 命令转 Windows 命令"](https://github.com/njlyf2011/WinBatchTools/tree/master/unix) 中部分unix兼容命令使用doskey改写，避免更改目录后命令无效的问题。同时删除了多余文件。（更改者：i3boyacc）
 
