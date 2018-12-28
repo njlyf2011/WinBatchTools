@@ -26,7 +26,6 @@ del %tmp_file%
 set tmp_file=
 echo.
 
-rem 不用多说了吧
 echo 操作成功完成。请按任意键退出。
 pause>nul
 exit
