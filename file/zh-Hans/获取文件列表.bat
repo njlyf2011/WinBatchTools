@@ -1,7 +1,7 @@
 @echo off
 
 rem Windows Batch Tools Copyright(C) 2017 NJLYF2011(Simple)
-rem 本程序从未提供品质担保。这是款自由软件，欢迎你在满足一定条件后对其再发布。
+rem Licensed under the MIT License.
 
 title 获取指定目录文件列表
 

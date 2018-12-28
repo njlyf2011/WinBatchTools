@@ -35,30 +35,30 @@ echo (26)退出程序
 echo.
 set /p cho= 请选择：
 echo.
-if %cho% EQU 1 .\file\简易文本创建器
-if %cho% EQU 2 .\file\获取文件列表
-if %cho% EQU 3 .\network\测试网络是否通畅
-if %cho% EQU 4 .\network\查看工作组
-if %cho% EQU 5 .\network\查看网络信息
-if %cho% EQU 6 .\network\校对时间
-if %cho% EQU 7 .\network\查看内网所有IP地址
-if %cho% EQU 8 .\system\screenfetch
-if %cho% EQU 9 .\system\查看进程
-if %cho% EQU 10 .\system\查看硬件信息
-if %cho% EQU 11 .\system\定时关机
-if %cho% EQU 12 .\system\检查系统文件完整性
-if %cho% EQU 13 .\system\禁用USB设备
-if %cho% EQU 14 .\system\旧式文件清理
-if %cho% EQU 15 .\system\批量修复DLL注册
-if %cho% EQU 16 .\system\启用USB设备
-if %cho% EQU 17 .\system\去除箭头
-if %cho% EQU 18 .\system\提取用户列表
-if %cho% EQU 19 .\system\修改软件默认安装盘符
-if %cho% EQU 20 .\system\重命名计算机
-if %cho% EQU 21 .\visual\修改当前系统主题
-if %cho% EQU 22 .\system\授权管理
+if %cho% EQU 1 .\file\zh-Hans\简易文本创建器
+if %cho% EQU 2 .\file\zh-Hans\获取文件列表
+if %cho% EQU 3 .\network\zh-Hans\测试网络是否通畅
+if %cho% EQU 4 .\network\zh-Hans\查看工作组
+if %cho% EQU 5 .\network\zh-Hans\查看网络信息
+if %cho% EQU 6 .\network\zh-Hans\校对时间
+if %cho% EQU 7 .\network\zh-Hans\查看内网所有IP地址
+if %cho% EQU 8 .\system\zh-Hans\screenfetch
+if %cho% EQU 9 .\system\zh-Hans\查看进程
+if %cho% EQU 10 .\system\zh-Hans\查看硬件信息
+if %cho% EQU 11 .\system\zh-Hans\定时关机
+if %cho% EQU 12 .\system\zh-Hans\检查系统文件完整性
+if %cho% EQU 13 .\system\zh-Hans\禁用USB设备
+if %cho% EQU 14 .\system\zh-Hans\旧式文件清理
+if %cho% EQU 15 .\system\zh-Hans\批量修复DLL注册
+if %cho% EQU 16 .\system\zh-Hans\启用USB设备
+if %cho% EQU 17 .\system\zh-Hans\去除箭头
+if %cho% EQU 18 .\system\zh-Hans\提取用户列表
+if %cho% EQU 19 .\system\zh-Hans\修改软件默认安装盘符
+if %cho% EQU 20 .\system\zh-Hans\重命名计算机
+if %cho% EQU 21 .\visual\zh-Hans\修改当前系统主题
+if %cho% EQU 22 .\system\zh-Hans\授权管理
 if %cho% EQU 23 %windir%\system32\winver
-if %cho% EQU 24 .\system\DISM_TOOL
+if %cho% EQU 24 .\system\zh-Hans\DISM_TOOL
 if %cho% EQU 25 .\unix\dash
 if %cho% EQU 26 goto end
 goto cho
